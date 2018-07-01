@@ -8,9 +8,19 @@ RESET  := $(shell tput -Txterm sgr0)
 
 # CLEAN
 info:##@CLEAN clean cello and celloutils frontend & backend
-	@./scripts/dev/clean-frontend.sh
-	@./scripts/dev/clean-backend.sh
-	@./scripts/dev/clean-cello.sh	
+	@echo "Github https://github.com/sngvahmed/PersonalBlog"
+	@echo "Board link https://app.pipefy.com/pipes/498001"
+	@echo "React-Bootstrap https://reactstrap.github.io/components/alerts/"
+	
+
+install-frontend:##@FRONTEND npm install frontend
+	@./scripts/frontend/install-frontend.sh
+
+run-frontend:##@FRONTEND start frontend 
+	@./scripts/frontend/run-frontend.sh
+
+build-frontend:##@FRONTEND get produciton for frontend
+	@./scripts/frontend/build-frontend.sh
 	
 HELP_FUN = \
 	%help; \

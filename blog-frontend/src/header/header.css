@@ -1,0 +1,17 @@
+.header {
+    padding: 40px;
+    font-size: 40px;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+.Header-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+    margin-right: 5px;
+}
+
+.title{
+    text-align: left
+}
